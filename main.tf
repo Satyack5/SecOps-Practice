@@ -7,6 +7,7 @@ terraform {
     bucket = "terraformstorebucket"
     key    = "Workspace.tfstate"
     region = "us-east-1"
+    dynamodb_table = "dynamodb-state-locking"
   }
 }
 
